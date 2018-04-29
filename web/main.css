@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  padding: 15px 15%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom:30px;
+}
+
+nav .logoDiv {
+  display: flex;
+  align-items: center;
+}
+
+nav .logoDiv>* {
+  display: inline-block;
+}
+
+nav img {
+  width: 100px;
+  height: 100px;
+}
+
+nav .navButtonDiv {
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  width:300px;
+  justify-content: flex-end;
+}
+
+nav .navButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 20px;
+  border-radius: 3px;
+  background: #008CCF;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  flex-basis: 0;
+  flex-grow: 1;
+}
+
+nav .navButton:nth-child(2) {
+  margin-left: 50px;
+}
+
+.companyName {
+  font-family: 'Lobster', cursive;
+}
+
+nav .companyName {
+  font-size: 150%;
+  color: #008CCF;
+}
+
+section {
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 40px;
+}
+
+.section1 img {
+  width: 100%;
+  display: block;
+  border-radius: 5px;
+}
+
+.section1>.details {
+  position: absolute;
+  bottom: 0;
+  padding: 20px 40px;
+}
+
+.section1 .details>* {
+  margin-bottom: 30px;
+}
+
+.section1 h2 {
+  font-family: 'Lobster', sans-serif;
+  font-size: 50px;
+  letter-spacing: 2px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+.section1 .details button {
+  padding: 10px 20px;
+  background: #FF9300;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  -webkit-box-shadow: 1px 1px 3px 1px rgba(176, 176, 176, 1);
+  -moz-box-shadow: 1px 1px 3px 1px rgba(176, 176, 176, 1);
+  box-shadow: 1px 1px 3px 1px rgba(176, 176, 176, 1);
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 700;
+}
+
+.section2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.section2 .city {
+  background: #F1F5F8;
+  border-radius: 5px;
+  padding-bottom: 20px;
+  min-height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.section2 .city img {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.section2 .city>div>div {
+  margin-bottom: 40px;
+}
+
+.section2 .cityName {
+  font-size: 190%;
+  font-weight: 600;
+  color: #004990;
+  text-align: center;
+}
+
+.section2 .cityDetails {
+  font-size: 90%;
+  color: #545454;
+  padding: 0 20px;
+}
+
+.section2 .readMore {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 85%;
+  color: #6F4299;
+  font-weight: 500;
+  padding: 0 20px;
+}
+
+.container > .title {
+  font-size:200%;
+font-family: 'Lobster', sans-serif;
+color:#0D1D59;
+margin-bottom:20px;
+text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
+}
