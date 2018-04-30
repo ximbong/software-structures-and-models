@@ -2,7 +2,7 @@ $(document).ready(function() {
 
 
   $(".cityName").click(function() {
-    let cityName = $(this).find(".cityName").text();
+    let cityName = $(this).text();
     console.log(cityName);
     window.location="result.html";
     localStorage.setItem("cityName", cityName);
