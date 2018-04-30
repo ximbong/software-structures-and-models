@@ -55,3 +55,19 @@ section>.resultList>* {
 .resultDetails>.address, .resultDetails>.rating {
   color: #545454;
 }
+
+.ratingStar {
+  position:relative;
+  display:inline-block;
+  margin-left:10px;
+}
+
+.ratingPercentage {
+  position: absolute;
+  white-space: nowrap;
+  overflow: hidden;
+  left:0;
+  top:0;
+  height:100%;
+  color:#F29817;
+}
