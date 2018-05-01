@@ -1,20 +1,21 @@
-.background{
-  width:100vw;
-  height:100vh;
-  position:absolute;
-  background:yellow;
-  top:0;
-  left:0;
-  padding:15px 15%;
+.background {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background: yellow;
+  top: 0;
+  left: 0;
+  padding: 15px 15%;
 }
 
-section>* {
+section>*, section>.resultList>* {
   margin-bottom: 20px;
 }
 
-section>.resultList>* {
-  margin-bottom: 20px;
+section> .resultTitle {
+  margin-bottom:30px
 }
+
 
 .result {
   display: grid;
@@ -57,17 +58,68 @@ section>.resultList>* {
 }
 
 .ratingStar {
-  position:relative;
-  display:inline-block;
-  margin-left:10px;
+  position: relative;
+  display: inline-block;
+  margin-left: 10px;
 }
 
 .ratingPercentage {
   position: absolute;
   white-space: nowrap;
   overflow: hidden;
-  left:0;
-  top:0;
-  height:100%;
-  color:#F29817;
+  left: 0;
+  top: 0;
+  height: 100%;
+  color: #F29817;
+}
+
+#weatherSection {
+  cursor:pointer;
+}
+
+section>.weatherDisplay {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+section .day {
+  text-align: center;
+  border-width: 2px 1px 2px 1px;
+  border-color: lightgrey;
+  border-style: solid;
+  padding: 10px 10px 5px 10px;
+}
+
+.day:last-child {
+  border-right: 2px solid lightgrey;
+}
+
+.day:first-child {
+  border-left: 2px solid lightgrey;
+}
+
+.day:nth-child(even) {
+  background: #F1F5F8;
+}
+
+.day > * {
+  margin-bottom:8px;
+}
+
+.day > .icon {
+  margin-bottom:5px;
+}
+.day >.date {
+  color:#424242;
+}
+.day >.temp {
+  color:#727272;
+}
+
+.day > .text {
+  font-size:90%;
+  font-weight:500;
+}
+.day >.date, .day > .temp {
+    font-weight: 600;
 }

@@ -1,0 +1,39 @@
+#currentWeatherSection {
+  border: 2px solid lightgrey;
+  padding: 20px 20px 10px 20px;
+  border-radius: 5px;
+}
+
+#currentWeatherSection>div>* {
+  margin-bottom: 20px;
+}
+
+#currentWeatherSection>div *{
+  margin-bottom: 10px;
+}
+
+section .city {
+  font-size: 220%;
+  font-weight: 600;
+  color: #424242;
+}
+
+section .country {
+  font-size: 120%;
+  color: #3B89CE;
+}
+
+section .currentWeather {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+section>div:first-child {
+  color: #727272;
+  font-weight: 500;
+}
+
+.currentWeather img {
+  display: block;
+  width: 80px;
+}

@@ -88,7 +88,7 @@ nav .companyName {
 
 section {
   position: relative;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 .section1 img {
@@ -196,7 +196,7 @@ section {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
 }
 
 .citySearch>* {
@@ -213,6 +213,7 @@ section {
 
 .citySearch input {
   font-size: 120%;
-  border-radius: 5px;
+  width:300px;
   padding: 0 10px;
+  line-height:36px;
 }
